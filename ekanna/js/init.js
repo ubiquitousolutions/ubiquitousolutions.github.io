@@ -1,3 +1,7 @@
+
+var base_url = 'http://142.93.223.111:5000/';
+
+
 (function($){
   $(function(){
 
