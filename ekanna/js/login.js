@@ -7,7 +7,8 @@ function login()
 	console.log(country);
 	console.log(phone_number);
 
-	var login_url = base_url + 'login';
+    var cors = 'https://cors.io/?'
+	var login_url = cors + base_url + 'login';
 	var data =  {
 				  "phone_number": phone_number,
 				  "country_code": "IND"
