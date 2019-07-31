@@ -13,9 +13,9 @@
 	<body>
 	  <nav class="white" role="navigation">
 	    <div class="nav-wrapper container">
-	      <a id="logo-container" href="#" class="brand-logo">Ekanna</a>
+	      <a id="logo-container" href="index.html" class="brand-logo">Ekanna</a>
 	      <ul class="right hide-on-med-and-down">
-	        <li><a href="pp.html">Login</a></li>
+	        <li><a href="login.html.html">Login</a></li>
 	      </ul>
 	      <ul class="right hide-on-med-and-down">
 	        <li><a href="pp.html">Privacy Policy</a></li>
@@ -42,9 +42,9 @@
 	         <form class="col s8" action="#" onsubmit="login()">
 	            <div class="row">
 		            	<div class="input-field col s3">
-				    <select id='country' class="icons">
-				      <option value="" disabled selected>Choose country</option>
-				      <option value="" data-icon="images/ind.png">+91</option>
+				    <select name='country' id='country' class="icons">
+				      <option value="" disabled>Choose country</option>
+				      <option value="" selected data-icon="images/ind.png">+91</option>
 				    </select>
 				    <label>Country</label>
 				  </div>
@@ -52,12 +52,21 @@
 	                  <input placeholder="7845124578" id="phone_number" type="text" class="validate" required>
 	                  <label for="phone_number">Phone Number</label>
 	               </div>
+	             </div>
+
+	             <div class="row">
+	             	<div id='otp_input'></div>
 	               &nbsp;&nbsp;&nbsp;<input id="submit_button" type="submit">
 	             </div>
+
 	         </form>
 	         </div>
 	      </div>
+	      <div id='login_responce'></div>
+	      <div id='test_otp'></div>
 	   </div>
+
+
 <br><br><br><br><br><br>
 	  <footer class="page-footer teal">
 	    <div id="contact_us" class="container">
